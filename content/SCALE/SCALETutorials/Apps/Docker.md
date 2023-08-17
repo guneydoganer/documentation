@@ -160,7 +160,7 @@ In the Scale UI, go to **System Settings > Shell** to begin entering commands:
 
 To view container namespaces: `k3s kubectl get namespaces`.
 To view pods by namespace: `k3s kubectl get -n <NAMESPACE> pods`.
-To access container shell: `k3s kubectl exec -n <NAMESPACE> --stdin --tty <POD> -- /bin/bash`.
+To access container shell: `k3s kubectl exec -n <NAMESPACE> --stdin --tty <POD> -- /bin/sh`.
 
 {{< expand "Additional Container Commands" >}}
 * View details about all containers: `k3s kubectl get pods,svc,daemonsets,deployments,statefulset,sc,pvc,ns,job --all-namespaces -o wide`.
